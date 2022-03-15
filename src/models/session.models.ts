@@ -9,7 +9,6 @@ export interface sessionDocument extends mongoose.Document {
   valid: boolean
   createdAt: Date;
   updatedAt: Date;
-  
 }
 
 const SessionSchema = new mongoose.Schema({
@@ -18,10 +17,6 @@ const SessionSchema = new mongoose.Schema({
 }, {
   timestamps: true
 })
-
-
-
-
 
 const sessionModel = mongoose.model("session", SessionSchema)
 
